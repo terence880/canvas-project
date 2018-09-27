@@ -1,0 +1,22 @@
+{
+  "name": "canvas-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terence880/canvas-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terence880/canvas-project/issues"
+  },
+  "homepage": "https://github.com/terence880/canvas-project#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
