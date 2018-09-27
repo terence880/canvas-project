@@ -1,0 +1,279 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/regular.css" integrity="sha384-A/oR8MwZKeyJS+Y0tLZ16QIyje/AmPduwrvjeH6NLiLsp4cdE4uRJl8zobWXBm4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
+    crossorigin="anonymous">
+  <link href="css/painter.css" rel="stylesheet" type='text/css'>
+  <title>Best Paint Ever</title>
+</head>
+
+<body>
+
+  <section>
+
+    <div class="content ">
+
+      <div class="tools">
+
+        <div class="buttons">
+
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+            <div class="row no gutter">
+
+              <div class="col-xl-12">
+                <label class="btn btn-primary" id="draw-rectangle" data-hover="Rectangle">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="far fa-square"></i>
+                </label>
+                <label class="btn btn-primary" id="draw-freehand" data-hover="Pen">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-pencil-alt"></i>
+                </label>
+              </div>
+
+              <div class="col-xl-12">
+                <label class="btn btn-primary" id="draw-circle" data-hover="Circle">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="far fa-circle"></i>
+                </label>
+                <label class="btn btn-primary" id="draw-polygon" data-hover="Polygon">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="far fa-star"></i>
+                </label>
+              </div>
+
+              <div class="col-xl-12">
+                <label class="btn btn-primary" id="draw-text" data-hover="Text">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-font"></i>
+                </label>
+                <label class="btn btn-primary" id="filling" data-hover="Fill">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-tint"></i>
+                </label>
+              </div>
+
+              <div class="col-xl-12">
+                <label class="btn btn-primary" id="draw-eraser" data-hover="Eraser">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-eraser"></i>
+                </label>
+                <label class="btn btn-primary" id="expand" data-hover="Expand">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-expand"></i>
+                </label>
+              </div>
+
+
+              <div class="col-xl-12">
+                <label class="btn btn-primary" id="draw-ellipse" data-hover="Ellipse">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="far fa-circle" style="transform: scale(2,1);"></i>
+                </label>
+                <label class="btn btn-primary" id="draw-line" data-hover="Line">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-minus" style="transform: scale(2.5,1);"></i>
+                </label>
+              </div>
+
+              <div class="col-xl-12">
+                <label class="btn btn-primary" id="draw-arc" data-hover="Arc">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-circle-notch"></i>
+                </label>
+                <label class="btn btn-primary" id="draw-quadratic" data-hover="Quadratic">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-superscript"></i>
+                </label>
+              </div>
+
+              <div class="col-xl-12">
+                <label class="btn btn-primary" id="drawing-clear" data-hover="Clear">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-shower"></i>
+                </label>
+                <label class="btn btn-primary" id="draw-bezier" data-hover="Bezier">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fab fa-cuttlefish"></i>
+                </label>
+              </div>
+              <div class="col-xl-12">
+                <label class="btn btn-primary" id="redo" data-hover="Redo">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-redo"></i>
+                </label>
+                <label class="btn btn-primary" id="undo" data-hover="Undo">
+                  <input type="radio" name="options" id="option" autocomplete="off">
+                  <i class="fas fa-undo"></i>
+                </label>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+        <div id='coordinates'>X: Y:</div>
+        <div id="width-control">
+          Line Width
+          <span id='width-val'>5</span>
+          <div class="slidecontainer">
+            <input type="range" name='width-slider' min="1" max="50" value="10" class='slider' id="width-set">
+          </div>
+        </div>
+
+        <div class="colorStroke">
+
+          <div class="row no gutter stroke" style="height: 70px" ;>
+
+            <div class="col-xl-12">
+
+              <label for="color-input" id="color-label" style="background-color: red"></label>
+              <input type="checkbox" id="color-input" checked></input>
+              <p>Stroke</p>
+
+            </div>
+
+          </div>
+
+          <div id="color-picker">
+            <canvas id="color-strip" height="150" width="30"></canvas>
+            <canvas id="color-block" height="150" width="150"></canvas>
+          </div>
+
+        </div>
+
+        <div class="colorFill">
+
+          <div class="row no gutter fill" style="height: 70px" ;>
+
+            <div class="col-xl-12">
+
+              <label for="color-inputFill" id="color-labelFill" style="background-color: blue"></label>
+              <input type="checkbox" id="color-inputFill" checked></input>
+              <p>Fill</p>
+
+            </div>
+
+          </div>
+
+          <div id="color-pickerFill">
+            <canvas id="color-stripFill" height="150" width="30"></canvas>
+            <canvas id="color-blockFill" height="150" width="150"></canvas>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div id="canvas-container">
+        <canvas id="canvas-real" class="canvas" width='1280px' height='900px'></canvas>
+        <canvas id="layer3" class="canvas" width='1280px' height='900px'></canvas>
+        <canvas id="layer4" class="canvas" width='1280px' height='900px'></canvas>
+        <canvas id="canvas-draft" class="canvas" width='1280px' height='900px'></canvas>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script type='text/javascript' src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="js/canvas-common.js"></script>
+    <script type='text/javascript' src="tools/UndoRedo.js"></script>
+    <script type='text/javascript' src="js/colorpickerfill.js"></script>
+    <script type='text/javascript' src="js/colorpickerstroke.js"></script>
+    <script type='text/javascript' src="shapes/draw-eraser.js"></script>
+    <script type='text/javascript' src="shapes/draw-freehand.js"></script>
+    <script type='text/javascript' src="shapes/draw-line.js"></script>
+    <script type='text/javascript' src="shapes/draw-rectangle.js"></script>
+    <script type='text/javascript' src="shapes/draw-circle.js"></script>
+    <script type='text/javascript' src="shapes/draw-arc.js"></script>
+    <script type='text/javascript' src="shapes/draw-polygon.js"></script>
+    <script type='text/javascript' src="shapes/draw-ellipse.js"></script>
+    <script type='text/javascript' src="shapes/draw-quadratic.js"></script>
+    <script type='text/javascript' src="shapes/draw-bezier.js"></script>
+    <script type='text/javascript' src="shapes/draw-text.js"></script>
+    <script type='text/javascript'>
+      $('#draw-quadratic').click(() => {
+        currentFunction = new DrawingQuadratic(contextReal, contextDraft);
+        $('.canvas').css('cursor', 'url(cursors/Precision.cur),auto');
+      });
+      $('#draw-eraser').click(() => {
+        currentFunction = new DrawingEraser(contextReal);
+        $('.canvas').css('cursor', 'url(cursors/eraser.cur),auto')
+      });
+      $('#draw-freehand').click(() => {
+        currentFunction = new DrawingFreehand(contextReal);
+        $('.canvas').css('cursor', 'url(cursors/brush.cur),auto');
+      });
+      $('#draw-line').click(() => {
+        currentFunction = new DrawingLine(contextReal, contextDraft);
+        $('.canvas').css('cursor', 'url(cursors/Precision.cur),auto');
+      });
+      $('#draw-rectangle').click(() => {
+        currentFunction = new DrawingRectangle(contextReal, contextDraft);
+        $('.canvas').css('cursor', 'url(cursors/Precision.cur),auto');
+      });
+      $('#draw-circle').click(() => {
+        currentFunction = new DrawingCircle(contextReal, contextDraft);
+        $('.canvas').css('cursor', 'url(cursors/Precision.cur),auto');
+      });
+      $('#draw-arc').click(() => {
+        currentFunction = new DrawingArc(contextReal, contextDraft);
+        $('.canvas').css('cursor', 'url(cursors/Precision.cur),auto');
+      });
+
+      $('#draw-polygon').click(() => {
+        currentFunction = new DrawingPolygon(contextReal, contextDraft);
+        $('.canvas').css('cursor', 'url(cursors/Precision.cur),auto');
+
+      });
+      $('#draw-text').click(() => {
+        currentFunction = new DrawingText(contextReal);
+        $('.canvas').css('cursor', 'url(cursors/Text.cur),auto');
+      });
+
+      $('#draw-ellipse').click(() => {
+        currentFunction = new DrawingEllipse(contextReal, contextDraft);
+        $('.canvas').css('cursor', 'url(cursors/Precision.cur),auto');
+      });
+      $('#draw-quadratic').click(() => {
+        currentFunction = new DrawingQuadratic(contextReal, contextDraft);
+        $('.canvas').css('cursor', 'url(cursors/Precision.cur),auto');
+      });
+      $('#draw-bezier').click(() => {
+        currentFunction = new DrawingBezier(contextReal, contextDraft);
+        $('.canvas').css('cursor', 'url(cursors/Precision.cur),auto');
+      });
+      currentFunction = new DrawingEllipse(contextReal, contextDraft);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/hammer.min.js"></script>
+    <script src="js/simple-touch.js"></script>
+    <script src="tools/width.js"></script>
+
+  </section>
+
+</body>
+
+</html>

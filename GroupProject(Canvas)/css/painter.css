@@ -1,0 +1,414 @@
+.canvas {
+    border: 3px #F2A516 solid;
+    background-color: white;
+    position: absolute;
+    display: inline;
+    opacity: 1;
+}
+
+#canvas-draft {
+    display: inline;
+    background-color: transparent;
+}
+
+#layer3 {
+    display: inline;
+    background-color: transparent;
+}
+
+#layer4 {
+    display: inline;
+    background-color: transparent;
+}
+
+body {
+    overflow: show;
+}
+
+.tools {
+    background-color: rgb(238, 143, 0);
+}
+
+#option {
+    display: none;
+}
+
+#coordinates {
+    padding-left: 10px;
+}
+
+#width-control {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(121, 6, 187);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: rgb(100, 4, 4);
+    cursor: pointer;
+}
+
+.buttons {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 2vw;
+    margin: 20px 0px 0px 20px;
+    padding: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(29, 2, 29);
+}
+
+.btn-primary {
+    width: 80px;
+    height: 35px;
+    background-image: linear-gradient(to bottom, #60B4D9 0, #60B4D9 100%);
+    background-repeat: repeat;
+}
+
+.btn {
+    border: 0px;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #193F71;
+    border-color: #193F71;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+#color-input {
+    display: none;
+}
+
+#color-inputFill {
+    display: none;
+}
+
+.colorStroke {
+    position: relative;
+    height: 250px;
+    margin-left: 18px;
+}
+
+.colorFill {
+    position: relative;
+    height: 250px;
+    margin-left: 18px;
+}
+
+.stroke {
+    display: flex;
+    justify-content: center;
+}
+
+#color-label {
+    height: 35px;
+    width: 35px;
+    border: solid 3px #193F71;
+}
+
+#color-labelFill {
+    height: 35px;
+    width: 35px;
+    border: solid 3px #193F71;
+}
+
+p {
+    font-size: 10px;
+}
+
+#color-input:checked~#color-picker {
+    opacity: 1;
+}
+
+#color-inputFill:checked~#color-pickerFill {
+    opacity: 1;
+}
+
+#color-strip {
+    position: absolute;
+    opacity: 1;
+    margin-left: 160px;
+    border: solid 3px #193F71;
+}
+
+#color-block {
+    position: absolute;
+    border: solid 3px #193F71;
+    margin: 0px;
+}
+
+#color-stripFill {
+    position: absolute;
+    opacity: 1;
+    margin-left: 160px;
+    border: solid 3px #193F71;
+}
+
+#color-blockFill {
+    position: absolute;
+    border: solid 3px #193F71;
+    margin: 0px;
+}
+
+canvas:hover {
+    cursor: crosshair;
+}
+
+/* button text */
+
+#draw-rectangle:hover {
+    font-size: 0px;
+}
+
+#draw-rectangle:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#draw-freehand:hover {
+    font-size: 0px;
+}
+
+#draw-freehand:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#draw-circle:hover {
+    font-size: 0px;
+}
+
+#draw-circle:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#draw-polygon:hover {
+    font-size: 0px;
+}
+
+#draw-polygon:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#draw-text:hover {
+    font-size: 0px;
+}
+
+#draw-text:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#filling:hover {
+    font-size: 0px;
+}
+
+#filling:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#draw-eraser:hover {
+    font-size: 0px;
+}
+
+#draw-eraser:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#expand:hover {
+    font-size: 0px;
+}
+
+#expand:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#redo:hover {
+    font-size: 0px;
+}
+
+#redo:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#undo:hover {
+    font-size: 0px;
+}
+
+#undo:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#draw-ellipse:hover {
+    font-size: 0px;
+}
+
+#draw-ellipse:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#draw-line:hover {
+    font-size: 0px;
+}
+
+#draw-line:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#draw-arc:hover {
+    font-size: 0px;
+}
+
+#draw-arc:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#draw-quadratic:hover {
+    font-size: 0px;
+}
+
+#draw-quadratic:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#drawing-clear:hover {
+    font-size: 0px;
+}
+
+#drawing-clear:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#draw-bezier:hover {
+    font-size: 0px;
+}
+
+#draw-bezier:hover:after {
+    content: attr(data-hover);
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
